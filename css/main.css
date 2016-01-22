@@ -17,3 +17,24 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+.tabs {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tabs > li {
+  display: inline-block;
+}
+
+.tabs a {
+  display: inline-block;
+  background-color: white;
+  color: darkgrey;
+  text-decoration: none;
+  padding: .5em .75em;
+  border-radius: 8px;
+  transition: all 500ms linear;
+  position: relative;
+}
