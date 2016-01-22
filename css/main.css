@@ -22,6 +22,7 @@ html {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  text-align: center;
 }
 
 .tabs > li {
@@ -31,10 +32,24 @@ html {
 .tabs a {
   display: inline-block;
   background-color: white;
-  color: darkgrey;
+  border: 4px solid darkgrey;
   text-decoration: none;
-  padding: .5em .75em;
-  border-radius: 8px;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
   transition: all 500ms linear;
   position: relative;
+}
+
+.tabs a:hover {
+  background-color: darkgrey;
+  color: darkgrey;
+}
+
+.panel {
+  display: none;
+}
+
+.panel:target {
+  display: block;
 }
